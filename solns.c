@@ -71,11 +71,12 @@ int factors(int x, int f[]){
           f[y]=n;
           y++;
           x=x/n;
+          n=2;
           
         }
        else{n++;}
     }
-   return y;
+   return y++;
 }
 
 
