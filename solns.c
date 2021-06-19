@@ -62,7 +62,39 @@ int mode(int x[], int num_x){
    }
     return mode_x;
    }   
+/*int isprime(int x);
+  for( int i=1;i<=n;i++){
+     for(j=1;j<i;j++)
+      
+         {
+         if(i%j==0)
+          count++;    
+          }
+          
+          }
+    if (count>2){               
+          printf("%d",i) ;       
+           }
+     
+   }
+  }
+}
+ */ 
 
+int factors(int num_x, int x[]){
+    int y=0;
+ 
+    for(int i=2;i<num_x;i++){
+       if(num_x%i==0){
+          x[y]=i;
+          y++;
+          
+         
+          
+       }
+       }
+   return y+1; 
+}
 
 
 
