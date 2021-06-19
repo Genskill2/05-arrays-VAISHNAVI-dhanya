@@ -1,7 +1,5 @@
 /* Enter your solutions in this file */
-#include <stdio.h>;
-#include <assert.h>
-int max(int x[], int  num_x);
+#include <stdio.h>
 
 int max(int x[], int  num_x){
    
@@ -14,15 +12,31 @@ int max(int x[], int  num_x){
       }
      }
    return max_x;
-   
-   
-}
-  
-int main(void) {
-  int x[] = {9,5,6,10,2,-3,4};
-  assert (max(x, 7) == 10);
+   }
+int min(int x[], int num_x){
 
-  int y[] = {5};
-  assert (max(y, 1) == 5);
-  printf("Max: passed\n");
-  }
+    int min_x;
+    min_x=x[0];
+    
+    for(int i=0;i<num_x;i++){
+      if(x[i]<min_x){
+      min_x=x[i];
+          
+      }
+    }
+   return min_x;
+}
+float average(int x[], int num_x){
+
+    float sum;
+    sum=0;
+    
+   for(int i=0;i<num_x;i++){
+      sum=sum+x[i];
+      
+   }
+   return sum/num_x;
+}
+
+
+
