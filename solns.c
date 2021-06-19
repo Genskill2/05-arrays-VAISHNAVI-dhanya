@@ -41,8 +41,27 @@ int max(int x[], int  num_x){
    
    
 }
+int mode(int x[], int num_x){
+
+     int mode_x;
+     int mode_count=0;
      
-    
+  for(int i=0;i<num_x;i++){
+    int count =1  ;
+    for(int j=0;j<i;j++){
+       if(i!=j && x[i]==x[j]){
+          count++;
+          
+           
+       }
+    }
+     if (count>mode_count){
+         mode_count=count;
+         mode_x=x[i];
+     }
+   }
+    return mode_x;
+   }   
 
 
 
